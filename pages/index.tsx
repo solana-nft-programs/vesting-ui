@@ -1,7 +1,7 @@
 import { Step1 } from 'components/Step1'
+import type { WalletShare } from 'components/Step2'
 import { Step2 } from 'components/Step2'
 import { Step3 } from 'components/Step3'
-import type { WalletShare } from 'handlers/useHandleVestingSchedule'
 import Head from 'next/head'
 import { useState } from 'react'
 
