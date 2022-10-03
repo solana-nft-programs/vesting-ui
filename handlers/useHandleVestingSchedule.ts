@@ -218,7 +218,7 @@ export const useHandleVestingSchedule = () => {
           const [transaction] = await issueToken(connection, wallet, {
             mint,
             issuerTokenAccountId: issuerTokenAccount.pubkey,
-            invalidationType: InvalidationType.Release,
+            invalidationType: InvalidationType.Vest,
             kind: TokenManagerKind.Edition,
             visibility: 'permissioned',
             permissionedClaimApprover: slot.address,
