@@ -1,5 +1,5 @@
 import { tryPublicKey } from '@cardinal/common'
-import { issueToken } from '@cardinal/token-manager'
+import { withIssueToken } from '@cardinal/token-manager'
 import { getTimeInvalidators } from '@cardinal/token-manager/dist/cjs/programs/timeInvalidator/accounts'
 import { findTimeInvalidatorAddress } from '@cardinal/token-manager/dist/cjs/programs/timeInvalidator/pda'
 import {
@@ -9,7 +9,7 @@ import {
 import { getTokenManagers } from '@cardinal/token-manager/dist/cjs/programs/tokenManager/accounts'
 import { findTokenManagerAddress } from '@cardinal/token-manager/dist/cjs/programs/tokenManager/pda'
 import { useWallet } from '@solana/wallet-adapter-react'
-import type { Transaction } from '@solana/web3.js'
+import { LAMPORTS_PER_SOL, SystemProgram, Transaction } from '@solana/web3.js'
 import { PublicKey } from '@solana/web3.js'
 import { asWallet } from 'common/wallets'
 import type { WalletShare } from 'components/Step2'
@@ -18,6 +18,10 @@ import { useEnvironmentCtx } from 'providers/EnvironmentProvider'
 import { useMutation } from 'react-query'
 
 const SLOT_THRESHOLD_SECONDS = 60 * 60 * 1 // 1 hours
+const PAYMENT_MANAGER_RECIPIENT = new PublicKey(
+  'crkdpVWjHWdggGgBuSyAqSmZUmAjYLzD435tcLDRLXr'
+)
+const LAMPORTS = 0.005 * LAMPORTS_PER_SOL
 
 const generateSlots = (
   walletShares: WalletShare[],
@@ -215,7 +219,15 @@ export const useHandleVestingSchedule = () => {
           if (!issuerTokenAccount) {
             throw 'Error finding token account to issue token from'
           }
-          const [transaction] = await issueToken(connection, wallet, {
+          const transaction = new Transaction()
+          transaction.add(
+            SystemProgram.transfer({
+              fromPubkey: wallet.publicKey,
+              toPubkey: PAYMENT_MANAGER_RECIPIENT,
+              lamports: LAMPORTS,
+            })
+          )
+          await withIssueToken(transaction, connection, wallet, {
             mint,
             issuerTokenAccountId: issuerTokenAccount.pubkey,
             invalidationType: InvalidationType.Vest,
