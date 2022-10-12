@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react'
 
 import { Airdrop } from './Airdrop'
 import { ButtonSmall } from './ButtonSmall'
-import { asWallet } from './wallets'
+import { asWallet } from './wallet'
 
 export const HeaderSlim = () => {
   const router = useRouter()

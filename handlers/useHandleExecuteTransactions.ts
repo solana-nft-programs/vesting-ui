@@ -2,7 +2,7 @@ import { useWallet } from '@solana/wallet-adapter-react'
 import type { Transaction } from '@solana/web3.js'
 import { sendAndConfirmRawTransaction } from '@solana/web3.js'
 import { notify } from 'common/Notification'
-import { asWallet } from 'common/wallets'
+import { asWallet } from 'common/wallet'
 import { useEnvironmentCtx } from 'providers/EnvironmentProvider'
 import { useMutation } from 'react-query'
 

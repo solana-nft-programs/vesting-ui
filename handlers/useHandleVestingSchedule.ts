@@ -15,7 +15,7 @@ import {
   SystemProgram,
   Transaction,
 } from '@solana/web3.js'
-import { asWallet } from 'common/wallets'
+import { asWallet } from 'common/wallet'
 import type { WalletShare } from 'components/Step2'
 import { getTokenAccounts } from 'hooks/useTokenAccounts'
 import { useEnvironmentCtx } from 'providers/EnvironmentProvider'
@@ -25,7 +25,7 @@ const SLOT_THRESHOLD_SECONDS = 60 * 60 * 1 // 1 hours
 const PAYMENT_MANAGER_RECIPIENT = new PublicKey(
   'crkdpVWjHWdggGgBuSyAqSmZUmAjYLzD435tcLDRLXr'
 )
-const LAMPORTS = 0.01 * LAMPORTS_PER_SOL
+const LAMPORTS = 0.025 * LAMPORTS_PER_SOL
 
 const generateSlots = (
   walletShares: WalletShare[],

@@ -78,7 +78,7 @@ export const Step2 = ({
   }, [walletSharesInput])
 
   return (
-    <div className="flex min-h-[800px] flex-wrap items-start justify-between gap-8">
+    <div className="flex min-h-[800px] flex-wrap items-start justify-between gap-8 overflow-x-scroll">
       <div className="flex flex-col">
         <div className="mb-2 text-3xl text-light-0">Step 2</div>
         <div className="text-lg text-medium-3">
@@ -91,7 +91,7 @@ export const Step2 = ({
         <div className="mb-4 flex flex-col gap-4">
           <div className="flex flex-row gap-4">
             <Input
-              className="w-1/4"
+              className="w-1/4 min-w-[100px]"
               type="text"
               placeholder={'CmAy...A3fD'}
               value={walletShares[0]?.address}
@@ -100,6 +100,7 @@ export const Step2 = ({
               }}
             />
             <Input
+              className="w-1/4 min-w-[100px]"
               type="number"
               placeholder={'Share'}
               value={walletShares[0]?.share}
@@ -108,6 +109,7 @@ export const Step2 = ({
               }}
             />
             <DurationInput
+              className="w-1/4"
               placeholder={'Release after'}
               handleChange={(v) =>
                 setFieldValue(`walletShares[0].durationSeconds`, v)
@@ -130,7 +132,7 @@ export const Step2 = ({
               i > 0 && (
                 <div className="flex flex-row gap-4" key={i}>
                   <Input
-                    className="w-1/4"
+                    className="w-1/4 min-w-[100px]"
                     type="text"
                     placeholder={'CmAy...A3fD'}
                     value={v.address}
@@ -142,6 +144,7 @@ export const Step2 = ({
                     }}
                   />
                   <Input
+                    className="w-1/4 min-w-[100px]"
                     type="number"
                     placeholder={'Share'}
                     value={v.share}
