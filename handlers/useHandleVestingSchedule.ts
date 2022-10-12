@@ -9,8 +9,12 @@ import {
 import { getTokenManagers } from '@cardinal/token-manager/dist/cjs/programs/tokenManager/accounts'
 import { findTokenManagerAddress } from '@cardinal/token-manager/dist/cjs/programs/tokenManager/pda'
 import { useWallet } from '@solana/wallet-adapter-react'
-import { LAMPORTS_PER_SOL, SystemProgram, Transaction } from '@solana/web3.js'
-import { PublicKey } from '@solana/web3.js'
+import {
+  LAMPORTS_PER_SOL,
+  PublicKey,
+  SystemProgram,
+  Transaction,
+} from '@solana/web3.js'
 import { asWallet } from 'common/wallets'
 import type { WalletShare } from 'components/Step2'
 import { getTokenAccounts } from 'hooks/useTokenAccounts'
@@ -21,7 +25,7 @@ const SLOT_THRESHOLD_SECONDS = 60 * 60 * 1 // 1 hours
 const PAYMENT_MANAGER_RECIPIENT = new PublicKey(
   'crkdpVWjHWdggGgBuSyAqSmZUmAjYLzD435tcLDRLXr'
 )
-const LAMPORTS = 0.005 * LAMPORTS_PER_SOL
+const LAMPORTS = 0.01 * LAMPORTS_PER_SOL
 
 const generateSlots = (
   walletShares: WalletShare[],

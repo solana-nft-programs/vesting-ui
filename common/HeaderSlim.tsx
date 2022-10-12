@@ -6,8 +6,8 @@ import { LogoTitled } from 'assets/LogoTitled'
 import { useRouter } from 'next/router'
 import { useEnvironmentCtx } from 'providers/EnvironmentProvider'
 import { useEffect, useState } from 'react'
-import { Airdrop } from './Airdrop'
 
+import { Airdrop } from './Airdrop'
 import { ButtonSmall } from './ButtonSmall'
 import { asWallet } from './wallets'
 
