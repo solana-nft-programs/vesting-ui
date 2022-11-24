@@ -23,6 +23,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.1",
     "@cardinal/common": "^2.0.11",
     "@cardinal/namespaces-components": "^4.1.19",
     "@cardinal/token-manager": "^1.6.0",
@@ -49,6 +50,7 @@
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
     "formik": "^2.2.9",
+    "graphql": "^16.6.0",
     "next": "12.1.4",
     "react": "18.0.0",
     "react-dom": "18.0.0",

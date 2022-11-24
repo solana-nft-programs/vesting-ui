@@ -18,6 +18,15 @@ export const MainHero = () => {
             <br />
             Specify wallets, amounts and release dates - review and deploy.
           </div>
+          <div className="flex items-center">
+            <a
+              href="https://github.com/cardinal-labs/cardinal-vesting-ui#getting-started"
+              target={'_blank'}
+              rel="noreferrer"
+            >
+              <Button>Need Help?</Button>
+            </a>
+          </div>
         </div>
         <div className="flex flex-col items-end justify-end gap-5 ">
           <div className="flex items-center gap-2 lg:gap-6">

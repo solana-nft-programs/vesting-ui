@@ -80,7 +80,9 @@ export const Step2 = ({
   return (
     <div className="flex min-h-[800px] flex-wrap items-start justify-between gap-8 overflow-x-scroll">
       <div className="flex flex-col">
-        <div className="mb-2 text-3xl text-light-0">Step 2</div>
+        <div className="mb-2 text-3xl text-light-0">
+          Step 2 (Skip to step 3 for custom schedule)
+        </div>
         <div className="text-lg text-medium-3">
           Specify recipient addresses, share and final release.
         </div>
