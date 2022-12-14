@@ -10,7 +10,7 @@ export const statsNames: StatKey[] = [
 
 export const useGlobalStats = () => {
   const index = new ApolloClient({
-    uri: 'https://welcome-elk-85.hasura.app/v1/graphql',
+    uri: 'https://index.cardinal.so/v1/graphql',
     cache: new InMemoryCache({ resultCaching: false }),
   })
   const v1Index = new ApolloClient({
@@ -26,12 +26,14 @@ export const useGlobalStats = () => {
     const queryResult = await index.query({
       query: gql`
         query GetTokenManagers {
-          q1: acc_176_aggregate(where: { invalidationType: { _eq: "5" } }) {
+          q1: acc_yyzphucinf4rglfy3vlf_aggregate(
+            where: { invalidationType: { _eq: "5" } }
+          ) {
             aggregate {
               count
             }
           }
-          q2: acc_176_aggregate(
+          q2: acc_yyzphucinf4rglfy3vlf_aggregate(
             where: { invalidationType: { _eq: "5" } }
             distinct_on: recipientTokenAccount
             order_by: { recipientTokenAccount: desc }
