@@ -1,8 +1,8 @@
 import './styles.css'
-import '@cardinal/namespaces-components/dist/esm/styles.css'
+import '@solana-nft-programs/namespaces-components/dist/esm/styles.css'
 import 'tailwindcss/tailwind.css'
 
-import { WalletIdentityProvider } from '@cardinal/namespaces-components'
+import { WalletIdentityProvider } from '@solana-nft-programs/namespaces-components'
 import { WalletProvider } from '@solana/wallet-adapter-react'
 import { WalletModalProvider } from '@solana/wallet-adapter-react-ui'
 import { getWalletAdapters } from '@solana/wallet-adapter-wallets'

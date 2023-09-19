@@ -1,4 +1,4 @@
-import { withFindOrInitAssociatedTokenAccount } from '@cardinal/common'
+import { withFindOrInitAssociatedTokenAccount } from '@solana-nft-programs/common'
 import {
   CreateMasterEditionV3,
   CreateMetadataV2,
@@ -31,7 +31,7 @@ const airdrops = [
   {
     name: 'test',
     symbol: 'test',
-    uri: 'https://nft.cardinal.so/metadata/2BaW8Zx16cz7gW46RPjJvu2DXcJzvoruSNSmFQj3BiR5?name=yczEJ6FxCNcrhPmxJuGePznCJ32gKzsj',
+    uri: 'https://nft.host.so/metadata/2BaW8Zx16cz7gW46RPjJvu2DXcJzvoruSNSmFQj3BiR5?name=yczEJ6FxCNcrhPmxJuGePznCJ32gKzsj',
   },
 ]
 

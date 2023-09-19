@@ -1,13 +1,13 @@
-import { tryPublicKey } from '@cardinal/common'
-import { withIssueToken } from '@cardinal/token-manager'
-import { getTimeInvalidators } from '@cardinal/token-manager/dist/cjs/programs/timeInvalidator/accounts'
-import { findTimeInvalidatorAddress } from '@cardinal/token-manager/dist/cjs/programs/timeInvalidator/pda'
+import { tryPublicKey } from '@solana-nft-programs/common'
+import { withIssueToken } from '@solana-nft-programs/token-manager'
+import { getTimeInvalidators } from '@solana-nft-programs/token-manager/dist/cjs/programs/timeInvalidator/accounts'
+import { findTimeInvalidatorAddress } from '@solana-nft-programs/token-manager/dist/cjs/programs/timeInvalidator/pda'
 import {
   InvalidationType,
   TokenManagerKind,
-} from '@cardinal/token-manager/dist/cjs/programs/tokenManager'
-import { getTokenManagers } from '@cardinal/token-manager/dist/cjs/programs/tokenManager/accounts'
-import { findTokenManagerAddress } from '@cardinal/token-manager/dist/cjs/programs/tokenManager/pda'
+} from '@solana-nft-programs/token-manager/dist/cjs/programs/tokenManager'
+import { getTokenManagers } from '@solana-nft-programs/token-manager/dist/cjs/programs/tokenManager/accounts'
+import { findTokenManagerAddress } from '@solana-nft-programs/token-manager/dist/cjs/programs/tokenManager/pda'
 import { useWallet } from '@solana/wallet-adapter-react'
 import {
   LAMPORTS_PER_SOL,
@@ -196,7 +196,7 @@ export const useHandleVestingSchedule = () => {
             (foundTokenData ? foundTokenData.tokenManager.parsed.mint : null),
           transaction: null,
           link: foundTokenData
-            ? `https://rent.cardinal.so/claim/${foundTokenData?.tokenManager.pubkey.toString()}`
+            ? `https://rent.host.so/claim/${foundTokenData?.tokenManager.pubkey.toString()}`
             : null,
           txLink: foundTokenData
             ? `https://explorer.solana.com/address/${foundTokenData?.tokenManager.pubkey.toString()}`

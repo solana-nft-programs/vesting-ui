@@ -1,4 +1,4 @@
-import { getBatchedMultipleAccounts } from '@cardinal/common'
+import { getBatchedMultipleAccounts } from '@solana-nft-programs/common'
 import * as metaplex from '@metaplex-foundation/mpl-token-metadata'
 import { PublicKey } from '@solana/web3.js'
 import { getTokenAccounts } from 'hooks/useTokenAccounts'

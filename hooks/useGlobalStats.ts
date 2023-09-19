@@ -10,7 +10,7 @@ export const statsNames: StatKey[] = [
 
 export const useGlobalStats = () => {
   const index = new ApolloClient({
-    uri: 'https://index.cardinal.so/v1/graphql',
+    uri: 'https://index.host.so/v1/graphql',
     cache: new InMemoryCache({ resultCaching: false }),
   })
   const v1Index = new ApolloClient({
@@ -52,14 +52,14 @@ export const useGlobalStats = () => {
     const v1Results = await v1Index.query({
       query: gql`
         query GetTokenManagers {
-          q1: cardinal_claim_events_aggregate(
+          q1: claim_events_aggregate(
             where: { invalidation_type: { _eq: "5" } }
           ) {
             aggregate {
               count
             }
           }
-          q2: cardinal_claim_events_aggregate(
+          q2: claim_events_aggregate(
             where: { invalidation_type: { _eq: "5" } }
             distinct_on: recipient_token_account
             order_by: { recipient_token_account: asc }

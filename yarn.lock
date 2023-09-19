@@ -239,9 +239,9 @@
     eip1193-provider "^1.0.1"
     js-sha3 "^0.8.0"
 
-"@cardinal/certificates@^2.0.1":
+"@solana-nft-programs/certificates@^2.0.1":
   version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@cardinal/certificates/-/certificates-2.0.1.tgz#6b76366ad11e64abfc3e0a7478560dd9c55d1c2c"
+  resolved "https://registry.yarnpkg.com/@solana-nft-programs/certificates/-/certificates-2.0.1.tgz#6b76366ad11e64abfc3e0a7478560dd9c55d1c2c"
   integrity sha512-q6Ke5cq/vj3oNwj0sh94FldXGSuUcTtu0L+c+yrEMqD8hgZJHemN/kGDeA7aU4PNJJLRtWoU80d7d0CxO9z/jg==
   dependencies:
     "@project-serum/anchor" "0.24.2"
@@ -251,9 +251,9 @@
     ts-mocha "^9.0.2"
     typescript "^4.5.5"
 
-"@cardinal/common@^2.0.10", "@cardinal/common@^2.0.11":
+"@solana-nft-programs/common@^2.0.10", "@solana-nft-programs/common@^2.0.11":
   version "2.0.11"
-  resolved "https://registry.yarnpkg.com/@cardinal/common/-/common-2.0.11.tgz#deffdb250ab3ece574b1f1df30853798536e38ff"
+  resolved "https://registry.yarnpkg.com/@solana-nft-programs/common/-/common-2.0.11.tgz#deffdb250ab3ece574b1f1df30853798536e38ff"
   integrity sha512-3PVRTJTSpdkDkTW2fXpTJZ9HQnI+wKj/dvzRv8DXB4qpGV6BruK99OvQYI7HRTF3nOYT8iJuYljtI1EVv271/g==
   dependencies:
     "@metaplex-foundation/mpl-token-metadata" "^1.2.5"
@@ -267,9 +267,9 @@
     tiny-invariant "^1.2.0"
     tslib "^2.3.1"
 
-"@cardinal/eslint-config-react@^1.0.10":
+"@solana-nft-programs/eslint-config-react@^1.0.10":
   version "1.0.10"
-  resolved "https://registry.yarnpkg.com/@cardinal/eslint-config-react/-/eslint-config-react-1.0.10.tgz#60c955886995d42dd11577d735a4fb0e9d1e1526"
+  resolved "https://registry.yarnpkg.com/@solana-nft-programs/eslint-config-react/-/eslint-config-react-1.0.10.tgz#60c955886995d42dd11577d735a4fb0e9d1e1526"
   integrity sha512-nKcfGjX0p/4K+/zXXJUOM5SJ/031ysLC3AQjC0urn5avhtb4aurGTd9ojtBPM5LAA1nwTY8Eh31WU/WQY8+9LQ==
   dependencies:
     "@saberhq/eslint-config" "^1.12.48"
@@ -277,16 +277,16 @@
     eslint-plugin-react "^7.29.3"
     eslint-plugin-react-hooks "^4.3.0"
 
-"@cardinal/namespaces-components@^4.1.19":
+"@solana-nft-programs/namespaces-components@^4.1.19":
   version "4.1.19"
-  resolved "https://registry.yarnpkg.com/@cardinal/namespaces-components/-/namespaces-components-4.1.19.tgz#ce97134c3f3e95f8fe072ed455116b0aa9da9bf4"
+  resolved "https://registry.yarnpkg.com/@solana-nft-programs/namespaces-components/-/namespaces-components-4.1.19.tgz#ce97134c3f3e95f8fe072ed455116b0aa9da9bf4"
   integrity sha512-VIUz95+LNheSBMK85vOxCz1rBip4+XACxIIzj/++3mVHNlvoJ14aO7gW5L/fyZGsFdKAzVO72rDGji3tFSjgpQ==
   dependencies:
-    "@cardinal/certificates" "^2.0.1"
-    "@cardinal/common" "^2.0.10"
-    "@cardinal/eslint-config-react" "^1.0.10"
-    "@cardinal/namespaces" "^4.1.53"
-    "@cardinal/token-manager" "^1.5.12"
+    "@solana-nft-programs/certificates" "^2.0.1"
+    "@solana-nft-programs/common" "^2.0.10"
+    "@solana-nft-programs/eslint-config-react" "^1.0.10"
+    "@solana-nft-programs/namespaces" "^4.1.53"
+    "@solana-nft-programs/token-manager" "^1.5.12"
     "@emotion/babel-preset-css-prop" "^11.10.0"
     "@emotion/core" "^11.0.0"
     "@emotion/css" "^11.7.1"
@@ -311,20 +311,20 @@
     typescript "^4.1.2"
     webpack-merge "^5.8.0"
 
-"@cardinal/namespaces@^4.1.53":
+"@solana-nft-programs/namespaces@^4.1.53":
   version "4.1.56"
-  resolved "https://registry.yarnpkg.com/@cardinal/namespaces/-/namespaces-4.1.56.tgz#3fe5c3c8077f12af16765dc13ebc281bc197f97c"
+  resolved "https://registry.yarnpkg.com/@solana-nft-programs/namespaces/-/namespaces-4.1.56.tgz#3fe5c3c8077f12af16765dc13ebc281bc197f97c"
   integrity sha512-7XCT1hxJ8o3qDZt+tGpVgC9OkTn/20wxThNs9BVBK7RGt8hOqmsx3EDk0H5cpRh63g7b436cAEINPMxi8D3bhA==
   dependencies:
-    "@cardinal/certificates" "^2.0.1"
-    "@cardinal/common" "^2.0.10"
-    "@cardinal/token-manager" "1.5.12"
+    "@solana-nft-programs/certificates" "^2.0.1"
+    "@solana-nft-programs/common" "^2.0.10"
+    "@solana-nft-programs/token-manager" "1.5.12"
     "@metaplex-foundation/mpl-token-metadata" "^1.2.5"
     "@project-serum/anchor" "^0.24.2"
 
-"@cardinal/token-manager@1.5.12":
+"@solana-nft-programs/token-manager@1.5.12":
   version "1.5.12"
-  resolved "https://registry.yarnpkg.com/@cardinal/token-manager/-/token-manager-1.5.12.tgz#48d218a98e17bc0d855622709a4a6debd6d1e867"
+  resolved "https://registry.yarnpkg.com/@solana-nft-programs/token-manager/-/token-manager-1.5.12.tgz#48d218a98e17bc0d855622709a4a6debd6d1e867"
   integrity sha512-KM91oWVlh5/6uiRRGvvhp8h2GwPylTVUlN97rQhLts+gzvww1jb8tYOkEFbenEmiHvaf9anIBeJU5eNM1CD8bQ==
   dependencies:
     "@metaplex-foundation/mpl-token-metadata" "^1.2.5"
@@ -336,9 +336,9 @@
     tiny-invariant "^1.2.0"
     tslib "^2.3.1"
 
-"@cardinal/token-manager@^1.5.12":
+"@solana-nft-programs/token-manager@^1.5.12":
   version "1.5.16"
-  resolved "https://registry.yarnpkg.com/@cardinal/token-manager/-/token-manager-1.5.16.tgz#8b32a7322b3b8434a2a6cbeccf875b12b4df38ef"
+  resolved "https://registry.yarnpkg.com/@solana-nft-programs/token-manager/-/token-manager-1.5.16.tgz#8b32a7322b3b8434a2a6cbeccf875b12b4df38ef"
   integrity sha512-TBkRYSNydxlrT4L+g2g7oo7rlvekg+kctcnuyMJdMQOm/R5gpx6Z8RnjXc/aLjdzaJ/nLlqHoIQk3pcoppdUWQ==
   dependencies:
     "@metaplex-foundation/mpl-token-metadata" "^1.2.5"
@@ -350,9 +350,9 @@
     tiny-invariant "^1.2.0"
     tslib "^2.3.1"
 
-"@cardinal/token-manager@^1.6.0":
+"@solana-nft-programs/token-manager@^1.6.0":
   version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@cardinal/token-manager/-/token-manager-1.6.0.tgz#10507cd2e261c87e26f20d2b21b90f5d3664cbe6"
+  resolved "https://registry.yarnpkg.com/@solana-nft-programs/token-manager/-/token-manager-1.6.0.tgz#10507cd2e261c87e26f20d2b21b90f5d3664cbe6"
   integrity sha512-IlyIfF8+ydqYZ5jFActUzahHlbz5LdwKg+sAox0jt6fFRe5uDfqFdtpYQv49SIOouVz5N3P7T6eJ16RtmdMVvg==
   dependencies:
     "@metaplex-foundation/mpl-token-metadata" "^1.2.5"

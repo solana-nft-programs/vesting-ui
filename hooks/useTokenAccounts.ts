@@ -1,4 +1,4 @@
-import type { AccountData } from '@cardinal/common'
+import type { AccountData } from '@solana-nft-programs/common'
 import * as spl from '@solana/spl-token'
 import type { Connection, PublicKey } from '@solana/web3.js'
 import { useEnvironmentCtx } from 'providers/EnvironmentProvider'

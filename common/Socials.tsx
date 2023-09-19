@@ -12,9 +12,9 @@ import {
 
 export const SOCIALS = {
   discord: { icon: <FaDiscord />, link: 'https://discord.gg/byq6uNTugq' },
-  github: { icon: <FaGithub />, link: 'https://github.com/cardinal-labs' },
-  medium: { icon: <FaMedium />, link: 'https://cardinal-labs.medium.com/' },
-  twitter: { icon: <FaTwitter />, link: 'https://twitter.com/cardinal_labs' },
+  github: { icon: <FaGithub />, link: 'https://github.com/-labs' },
+  medium: { icon: <FaMedium />, link: 'https://-labs.medium.com/' },
+  twitter: { icon: <FaTwitter />, link: 'https://twitter.com/labs' },
 }
 
 export type IconKey =

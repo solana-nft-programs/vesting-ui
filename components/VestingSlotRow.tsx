@@ -1,4 +1,4 @@
-import { shortPubKey } from '@cardinal/common'
+import { shortPubKey } from '@solana-nft-programs/common'
 import { Button } from 'common/Button'
 import { useHandleExecuteTransaction } from 'handlers/useHandleExecuteTransaction'
 import type { VestingSlot } from 'handlers/useHandleVestingSchedule'
@@ -21,7 +21,7 @@ export const VestingSlotRow = ({
   const link =
     v.link ??
     (handleExecuteTransaction.data
-      ? `https://rent.cardinal.so/claim/${v.mintId?.toString()}`
+      ? `https://rent.host.so/claim/${v.mintId?.toString()}`
       : null)
 
   return (

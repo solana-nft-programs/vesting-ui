@@ -20,7 +20,7 @@ export const MainHero = () => {
           </div>
           <div className="flex items-center">
             <a
-              href="https://github.com/cardinal-labs/cardinal-vesting-ui#getting-started"
+              href="https://github.com/-labs/-vesting-ui#getting-started"
               target={'_blank'}
               rel="noreferrer"
             >

@@ -15,12 +15,12 @@ function Home() {
   return (
     <div className="relative bg-dark-5">
       <Head>
-        <title>Cardinal Vesting UI</title>
-        <meta name="description" content="Cardinal Staking UI" />
+        <title> Vesting UI</title>
+        <meta name="description" content=" Staking UI" />
         <link rel="icon" href={'/favicon.ico'} />
         <script
           defer
-          data-domain="stake.cardinal.so"
+          data-domain="stake.host.so"
           src="https://plausible.io/js/plausible.js"
         ></script>
       </Head>
